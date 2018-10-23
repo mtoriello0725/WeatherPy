@@ -12,7 +12,6 @@
 	font-size: 28px;
 	color: white;
 	background-color: #13b3a2;
-	display: block;
 	padding-left: 15px;
 	font-weight: bold;
 }
@@ -45,11 +44,18 @@
 	border: 10px solid transparent;
 }
 
-.mainImage img {
+.summaryImage img {
 	padding: 0 10px;
 	float: left;
 	width: 50%;
 	height: auto;
+}
+
+.mainImage img {
+	padding: 0 10px;
+	float: center;
+	width: 100%;
+	heigt: auto;
 }
 
 p {

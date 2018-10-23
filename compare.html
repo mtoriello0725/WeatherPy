@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WeatherPy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/mystyles.css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body class="main_body">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./index.html">Latitude</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="./temp.html">Temperature</a></li>
+            <li><a href="./humidity.html">Humidity</a></li>
+            <li><a href="./cloudiness.html">Cloudiness</a></li>
+            <li><a href="./wind_speed.html">Wind Speed</a></li> 
+          </ul>
+        </li>
+        <li><a href="./compare.html">Comparison</a></li>
+        <li><a href="./data.html">Data</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+<!--       No longer need the colum seperation. Simply just put all 4 visualizations in quadrants.-->
+      <!-- Column for Other Visualizations -->
+        <!-- Row for Header and other plots-->
+    <div class="row plotSummary2">
+      <h1 class="page-header titleColor">Comparison: Latitude vs X</h1>
+    </div>
+      <!-- Graphs in quadrants (Image locations subject to change)-->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <a href="./temp.html">
+            <img src="./Figures/Temp vs Lat.png">
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <a href="./humidity.html">
+            <img src="./Figures/Lat vs Humidity.png">
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <a href="./cloudiness.html">
+            <img src="./Figures/Lat vs Cloudiness.png">
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <a href="./wind_speed.html">
+            <img src="./Figures/Lat vs Wind Speed.png">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer font-small blue pt-4">
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://github.com/mtoriello0725"> Michael Toriello</a>
+    </div>    
+  </footer>
+
+</body>
+
+</html>
