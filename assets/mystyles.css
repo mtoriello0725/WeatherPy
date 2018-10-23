@@ -1,0 +1,61 @@
+.main_body {
+	color: black;
+	background-color: #e0f2f163;
+}
+
+.container-fluid {
+	padding-left: 120px;
+	background-color: white;
+}
+
+.navbar-default .navbar-brand {
+	font-size: 28px;
+	color: white;
+	background-color: #13b3a2;
+	display: block;
+	padding-left: 15px;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-right {
+	padding-right: 50px;
+}
+
+.titleColor {
+	color: #13b3a2;
+}
+
+/* Body styling */
+
+.plotSummary1 {
+	background-color: white;
+	padding: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-clip: padding-box;
+	border: 10px solid transparent;
+}
+
+.plotSummary2 {
+	background-color: white;
+	padding: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-clip: padding-box;
+	border: 10px solid transparent;
+}
+
+.mainImage img {
+	padding: 0 10px;
+	float: left;
+	width: 50%;
+	height: auto;
+}
+
+p {
+	font-family: 'Open Sans', Tahoma, sans-serif;
+	font-size: 1em;
+	line-height: 2;
+	color: #6d8092;
+	text-align: justify;
+}
