@@ -1,19 +1,90 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
   <title>WeatherPy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/mystyles.css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
-	<h1>WeatherPy</h1>
-	<img src="Figures/Temp vs Lat.png" alt="Temperature vs Latitude"/>
-	<br>
-	<h2>Description of WeatherPy</h2>
+<body class="main_body">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Latitude</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Plot 1</a></li>
+            <li><a href="#">Plot 2</a></li>
+            <li><a href="#">Plot 3</a></li>
+            <li><a href="#">Plot 4</a></li>	
+          </ul>
+        </li>
+        <li><a herf="#">Comparison</a></li>
+        <li><a herf="#">Data</a></li>
+      </ul>
+    </div>
+  </nav>
 
-	<p>
-		This is an analysis of the weather trends for 1300 random cities around the globe.
-	</p>
+  <div class="container">
+  	<div class="row">
+
+      <!-- Column for Plot Summary -->
+      <div class="col-md-8">
+        <!-- Row for Header and summary-->
+        <div class="row plotSummary1">
+          <h1 class=" page-header titleColor">Summary: Latitude vs. X</h1>
+        <!-- Row for the content of summary -->
+          <p class="mainImage"><img src="./Figures/Temp vs Lat.png" ></p>
+          <p>The purpose of this project is to analyze climate trends in major cities all around the world. In this collection of scatter plots, roughly 13,000 cities in any part of the world were selected at random to be a sample in the database. Real time climate information such as temperature, humidity, cloudiness, annd wind speed was collected for each city. Please check out the visualizations for each of these characteristics on the right!<br><br>Major cities were selected using the python library citipy, and city information was collected using <a href="https://openweathermap.org/api">OpenWeatherMap API</a>. After collecting the data, the Python library Pandas was used to analyse the dataset, and Matplotlib was used to display the results.</p>
+        </div>
+      </div>
+
+      <!-- Column for Other Visualizations -->
+      <div class="col-md-4">
+        <!-- Row for Header and other plots-->
+        <div class="row plotSummary2">
+          <h2 class="page-header titleColor">Visualizations</h2>
+          <!-- Graphs in quadrants (Image locations subject to change)-->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="thumbnail">
+                <img src="./Figures/Temp vs Lat.png">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="thumbnail">
+                <img src="./Figures/Lat vs Humidity.png">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="thumbnail">
+                <img src="./Figures/Lat vs Cloudiness.png">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="thumbnail">
+                <img src="./Figures/Lat vs Wind Speed.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer font-small blue pt-4">
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://github.com/mtoriello0725"> Michael Toriello</a>
+    </div>    
+  </footer>
 
 </body>
 
